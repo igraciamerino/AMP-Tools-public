@@ -10,6 +10,8 @@
 using namespace amp;
 
 int main(int argc, char** argv) {
+    /*    Include this line to have different randomized environments every time you run your code (NOTE: this has no affect on grade()) */
+    amp::RNG::seed(amp::RNG::randiUnbounded());
 
     /*    Randomly generate the problem     */ 
 
@@ -39,7 +41,7 @@ int main(int argc, char** argv) {
     {
         // Call your algorithm on the problem
         amp::Path2D path = algo.plan(problem);
-        
+
         // Check your path to make sure that it does not collide with the environment 
         bool success = HW2::check(path, problem);
 

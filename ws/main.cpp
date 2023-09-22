@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
     {
         // Call your algorithm on the problem
         amp::Path2D path = algo.plan(problem);
-
+        
         // Check your path to make sure that it does not collide with the environment 
         bool success = HW2::check(path, problem);
 
@@ -65,7 +65,7 @@ int main(int argc, char** argv) {
 
     Visualizer::showFigures();
 
-    HW2::grade(algo, "nonhuman.biologic@myspace.edu", argc, argv);
+    HW2::grade(algo, "ibon.gracia@colorado.edu", argc, argv);
 
     return 0;
 }
